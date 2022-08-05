@@ -1,6 +1,6 @@
 interface ImageProps {
   url: string
-  caption: string
+  caption?: string
 }
 
 const ImageContainer = (props: ImageProps) => {
