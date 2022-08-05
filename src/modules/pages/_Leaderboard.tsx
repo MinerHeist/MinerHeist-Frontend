@@ -1,7 +1,9 @@
+import { ArticleContainer } from '../components'
+
 const Leaderboard = (): JSX.Element => {
   return (
-    <div className="page landing">
-      <h1>Leaderboard Page</h1>
+    <div className="page leaderboard">
+      <ArticleContainer title="Leaderboard"></ArticleContainer>
     </div>
   )
 }

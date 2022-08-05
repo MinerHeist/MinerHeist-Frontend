@@ -20,7 +20,8 @@ main {
   top: $navbarHeight;
   left: 0;
   display: flex;
-  place-items: center;
+  align-items: start;
+  justify-content: center;
   background: $defaultDark;
   min-width: 320px;
   min-height: calc(100vh - ($navbarHeight + $footerHeight));

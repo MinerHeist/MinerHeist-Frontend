@@ -1,7 +1,9 @@
+import { ArticleContainer } from '../components'
+
 const Tome = (): JSX.Element => {
   return (
-    <div className="page landing">
-      <h1>Tome Page</h1>
+    <div className="page tome">
+      <ArticleContainer title="Tome" />
     </div>
   )
 }
