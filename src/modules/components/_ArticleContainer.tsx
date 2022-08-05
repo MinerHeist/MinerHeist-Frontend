@@ -2,7 +2,7 @@ import React from 'react'
 
 interface ArticleProps {
   title: string
-  children: React.ReactNode
+  children?: React.ReactNode
 }
 
 const ArticleContainer = (props: ArticleProps): JSX.Element => {
