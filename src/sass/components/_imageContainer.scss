@@ -1,0 +1,22 @@
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+
+  img {
+    margin: 0.25rem 0;
+    max-width: 80%;
+    max-height: 38vh;
+  }
+
+  p {
+    max-width: 80%;
+    font-style: italic;
+    color: $fontColor;
+    font-size: 0.75rem;
+    text-indent: 0;
+    text-align: center;
+  }
+}

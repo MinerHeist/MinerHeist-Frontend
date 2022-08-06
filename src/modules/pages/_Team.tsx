@@ -1,7 +1,9 @@
+import { ArticleContainer } from '../components'
+
 const Team = (): JSX.Element => {
   return (
-    <div className="page landing">
-      <h1>Team Page</h1>
+    <div className="page team">
+      <ArticleContainer title="Team" />
     </div>
   )
 }

@@ -1,0 +1,10 @@
+footer {
+  position: absolute;
+  bottom: -$footerHeight;
+  left: 0;
+  width: 100vw;
+  height: $footerHeight;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

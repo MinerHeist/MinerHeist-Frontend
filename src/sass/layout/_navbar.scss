@@ -1,30 +1,32 @@
 #navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 3rem;
+  background: $defaultDark;
+  box-shadow: $shadowColor 0 $shadowOffset $shadowOffset;
+
   button {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    height: 2.5rem;
     width: 3rem;
-    height: 3rem;
+    height: $navbarHeight;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: none;
-    border-radius: 8px;
     border: none;
     padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
     cursor: pointer;
-    transition: border-color 0.25s;
 
     span {
       margin: 0.15rem 0;
       height: 0.25rem;
       width: 1.75rem;
-      background: #ffffff;
+      background: $fontColor;
       border-radius: 9px;
     }
   }
@@ -34,13 +36,13 @@
     top: 3rem;
     left: 0;
     width: 100%;
-    height: calc(((100vh - 3rem)));
-    backdrop-filter: blur(10px);
+    height: 100vh;
+    backdrop-filter: blur(5px);
   }
 
   .navbar-menu {
-    position: absolute;
-    padding: 0 1rem;
+    position: fixed;
+    padding: 0 0rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -49,16 +51,19 @@
     align-items: center;
     justify-content: center;
     height: max-content;
+    z-index: 1;
+    border-radius: $radius;
+    box-shadow: $shadowColor $shadowOffset $shadowOffset $shadowOffset;
 
     .nav-link {
       width: 100%;
       height: 100%;
       color: white;
-      padding: 1.5rem 1rem;
+      padding: 1.5rem 2rem;
       font-size: 2rem;
       text-decoration: none;
       background: none;
-      border-radius: 0.5rem;
+      border-radius: $radius;
     }
 
     .nav-link:hover {
@@ -73,11 +78,11 @@
     transform: translate(-50%, -50%);
     content: '';
     background: black;
-    opacity: 10%;
+    opacity: 45%;
     height: 100%;
     width: 100%;
     z-index: -1;
-    border-radius: 0.5rem;
+    border-radius: $radius;
   }
 
   .hide {

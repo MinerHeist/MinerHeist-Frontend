@@ -16,7 +16,10 @@ const Navbar = () => {
         <span></span>
         <span></span>
       </button>
-      <div className={`blur-div ${showMenu ? 'show' : 'hide'}`}></div>
+      <div
+        className={`blur-div ${showMenu ? 'show' : 'hide'}`}
+        onClick={handleToggle}
+      ></div>
       <div className={`navbar-menu ${showMenu ? 'show' : 'hide'}`}>
         {pages.map((page) => {
           return (
