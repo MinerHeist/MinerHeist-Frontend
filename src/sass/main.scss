@@ -6,11 +6,14 @@
 }
 
 // Abstracts
+@import 'abstracts/mixins';
 @import 'abstracts/variables';
 
 // Components
 @import 'components/articleContainer';
+@import 'components/button';
 @import 'components/imageContainer';
+@import 'components/modal';
 
 // Layout
 @import 'layout/index';

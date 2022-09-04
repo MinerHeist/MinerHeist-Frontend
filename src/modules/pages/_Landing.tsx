@@ -7,6 +7,11 @@ const Landing = (): JSX.Element => {
   return (
     <div className="page landing">
       <ArticleContainer title="Landing Page">
+        <form action="http://127.0.0.1:5173/signup" id="sign-up-button">
+          <button type="submit" className="custom-button">
+            Sign Up
+          </button>
+        </form>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum quidem
           repellendus nemo similique distinctio doloribus unde sapiente alias
@@ -105,6 +110,11 @@ const Landing = (): JSX.Element => {
           Asperiores, illum maiores iusto ut dolorem, quisquam odit cum adipisci
           nisi nobis mollitia cupiditate officiis. Debitis, fugiat recusandae?
         </p>
+        <form action="http://127.0.0.1:5173/signup" id="sign-up-button">
+          <button type="submit" className="custom-button">
+            Sign Up
+          </button>
+        </form>
       </ArticleContainer>
     </div>
   )

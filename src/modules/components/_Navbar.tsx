@@ -26,7 +26,7 @@ const Navbar = () => {
             <a
               className="nav-link"
               key={nanoid()}
-              href={page == 'Home' ? '/' : page}
+              href={page == 'Home' ? '/' : page.toLowerCase()}
             >
               {page}
             </a>

@@ -1,0 +1,62 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -49.79%);
+  height: calc(100vh - ($navbarHeight + $footerHeight));
+  width: 95vw;
+  //   background: $defaultDark;
+  box-shadow: $shadowColor 0 $shadowOffset $shadowOffset;
+  padding: 1.5rem;
+  z-index: 2;
+  background: $defaultDark;
+  max-width: 62.5%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media screen and (max-width: 1500px) {
+    min-width: 75%;
+  }
+
+  @media screen and (max-width: 600px) {
+    min-width: 95%;
+  }
+
+  .close-button {
+    position: absolute;
+    top: -2.5rem;
+    right: -2.5rem;
+    transform: translate(-50%, 50%);
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background: #ffffff;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 150ms;
+    z-index: 3;
+
+    .cross {
+      @include cross(2rem, #000000, 0.25rem);
+    }
+
+    &:hover,
+    &:focus {
+      transform: translate(-50%, 50%) rotateZ(90deg);
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
