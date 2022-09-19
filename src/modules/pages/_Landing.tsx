@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { ArticleContainer, ImageContainer } from '../components'
 import alice_1 from '../images/alice_1.jpg'
 import alice_2 from '../images/alice_2.jpg'
@@ -7,10 +8,13 @@ const Landing = (): JSX.Element => {
   return (
     <div className="page landing">
       <ArticleContainer title="Landing Page">
-        <form action="http://127.0.0.1:5173/signup" id="sign-up-button">
+        <form action="" id="sign-up-button">
+          <Link to='/signup'>
           <button type="submit" className="custom-button">
             Sign Up
           </button>
+          </Link>
+          
         </form>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum quidem
